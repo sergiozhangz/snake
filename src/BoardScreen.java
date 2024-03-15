@@ -11,11 +11,14 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
+/**
+ * @author sergiozhangz
+ * @version v1.0
+ */
+
 public class BoardScreen extends JPanel {
 
-    /**
-     *
-     */
+    
     int player = 0;
     BoardDrawing bd;
     JPanel stats;

@@ -10,11 +10,16 @@ import javax.swing.JPanel;
 //note: board does not change dynamically 
 //note: board shape and window aesthetics to be set
 //note: unification of colors not done
+
+/**
+ * 
+ * @author sergiozhangz
+ * @version v1.0
+ */
+
 public class BoardDrawing extends JPanel {
 
-    /**
-     *
-     */
+    
     int b = 0;
     int row = 8;
     int col = 8;
@@ -26,6 +31,13 @@ public class BoardDrawing extends JPanel {
     //ArrayList<Portal> portals;
     //ArrayList<Player> players;
 
+    /**
+     * Constructor
+     * @param row fila
+     * @param col columna
+     * @param bs BoardScreen
+     */
+    
     public BoardDrawing(int row, int col, BoardScreen bs) {
         this.bs = bs;
 
@@ -65,6 +77,11 @@ public class BoardDrawing extends JPanel {
 
     }
 
+    /**
+     * 
+     * @param g Graphics
+     */
+    
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;//.create();
@@ -171,6 +188,8 @@ public class BoardDrawing extends JPanel {
         }
 
     }
+    
+    
 
     private void changePlayerColorPosition(Graphics2D g2d, int pl, Rectangle cell, int cellWidth, int cellHeight) {
         //only one player considered here
@@ -187,6 +206,12 @@ public class BoardDrawing extends JPanel {
 				player = port.returnEnd();
 		}
 	}
+     */
+    
+    /**
+     * ensurePlayerPosition Éste es el método ensurePlayerPosition
+     * @param pnos
+     * @return mensaje
      */
     public String ensurePlayerPosition(int pnos) {
         String message = "";
@@ -207,6 +232,12 @@ public class BoardDrawing extends JPanel {
 	public void setPlayer(int a){
 		player = a;
 	}
+     */
+    
+    /**
+     * Método setPlayer
+     * @param a
+     * @param pnos 
      */
     public void setPlayer(int a, int pnos) {
         bs.players.get(pnos).incPosition(a);

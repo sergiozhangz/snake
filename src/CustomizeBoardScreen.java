@@ -7,6 +7,12 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * 
+ * @author sergiozhangz
+ * @version v1.0
+ */
+
 //needs massive improvements
 public class CustomizeBoardScreen extends JPanel {
 
